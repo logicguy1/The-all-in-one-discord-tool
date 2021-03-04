@@ -1,0 +1,21 @@
+~~~~~~~~~~~ USER INFORMATION ~~~~~~~~~~~
+User: ! Smash``#2333
+Id: 812674592014336060
+Email: raahimpeerzadaofficial1@gmail.com
+Phone: None
+Token: ODEyNjc0NTkyMDE0MzM2MDYw.YD1Bzg.F4_8KLvkhKGkybGSkaaKs_rDZqU
+Avatar: https://cdn.discordapp.com/avatars/812674592014336060/ff41252ac4886949bf35aec1d3c1632d.png
+2fA: False
+Languge: en-GB
+
+~~~~~~~~~~~ SERVER INFORMATOIN ~~~~~~~~~~~
+Name: SELL YOUR BITCOIN
+Id: 816075015782137896 Owner: False
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Name: ! Smash``'s server
+Id: 816346112095944716 Owner: True
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+~~~~~~~~~~~ FRIEND INFORMATION ~~~~~~~~~~~
+Friend: Estalic#9204 Id: 299930948932206605
+Outgoing: Drillenissen#4268 Id: 391219709397434399
