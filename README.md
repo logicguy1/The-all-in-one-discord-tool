@@ -4,3 +4,6 @@
 <img src="asset.png" />
 </p>
 
+## Requrements
+- colored
+- requests
