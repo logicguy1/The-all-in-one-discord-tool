@@ -13,11 +13,20 @@
     ·
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Request Feature</a>
   </p>
-<p align="center">
-<img src="asset.png" />
-</p>
+## About The Project
+[![Product Name Screen Shot][example.png]](https://discord.gg/TMshrBeyHE)
 
+The tool has all the features you need to run and raid a discord server
+It was made to test bots and administrators in my server
 
-## Requrements
-- colored
-- requests
+### Built With
+
+* [Requests](https://github.com/psf/requests)
+* [Colored](https://gitlab.com/dslackw/colored)
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
