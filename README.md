@@ -18,7 +18,7 @@
 
 <img src="asset.png" alt="Image of product">
 
-The tool has all the features you need to run and raid a discord server
+The tool has all the features you need to run and raid a discord server  
 It was made to test bots and administrators in my server
 
 ### Built With
