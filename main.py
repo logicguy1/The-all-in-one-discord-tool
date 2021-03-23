@@ -1,4 +1,3 @@
-# ODEyNjc0NTkyMDE0MzM2MDYw.YD1Bzg.F4_8KLvkhKGkybGSkaaKs_rDZqU
 from colored import fg, bg, attr
 import time
 import os
