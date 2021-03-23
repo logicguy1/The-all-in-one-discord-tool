@@ -13,8 +13,10 @@
     ·
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Request Feature</a>
   </p>
+  
 ## About The Project
-[![Product Name Screen Shot][example.png]](https://discord.gg/TMshrBeyHE)
+
+[![Product Name Screen Shot][asset.png]](https://discord.gg/TMshrBeyHE)
 
 The tool has all the features you need to run and raid a discord server
 It was made to test bots and administrators in my server
