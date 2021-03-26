@@ -1,25 +1,58 @@
+<p align="center">
+<img src=https://img.shields.io/github/stars/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=blue />
+<img src=https://img.shields.io/github/forks/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=blue />
+<img src=https://img.shields.io/github/issues/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=informational />
+<img src=https://img.shields.io/github/issues-pr/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=informational />
+</p>
+<br />
+<p align="center">
+    <img src="assets/logo.png" alt="Logo" width="150" height="150">
 
   <h3 align="center">The all in one discord tool</h3>
 
   <p align="center">
-    A tool for discord that includes many features handy for any discord user
+    DESCRIPTION
     <br />
-    <a href="https://github.com/logicguy1/The-all-in-one-discord-tool"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/docs/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/logicguy1/The-all-in-one-discord-tool">View Demo</a>
-    ·
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Report Bug</a>
     ·
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Request Feature</a>
+      ·
+    <a href="https://discord.gg/TMshrBeyHE">Join the discord</a>
   </p>
-  
+</p>
+
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#copyright">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
 ## About The Project
 
-<img src="asset.png" alt="Image of product">
+<img src="assets/example.png" alt="Image of product">
 
 The tool has all the features you need to run and raid a discord server  
-It was made to test bots and administrators in my server
 
 ### Built With
 
@@ -34,6 +67,7 @@ To get a local copy up and running follow these simple steps.
 You need to install python, that can be done [here](https://www.python.org)
 
 ### Installation
+
 1. Clone the repo
    ```sh
    git clone https://github.com/logicguy1/The-all-in-one-discord-tool.git
@@ -48,12 +82,12 @@ You need to install python, that can be done [here](https://www.python.org)
    python3.8 -m pip install requests
    python3.8 -m pip install colored
    ```
-   
+
 ## Usage
 
 Run the `main.py` file using `py -3 main.py` and select an option
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/logicguy1/The-all-in-one-discord-tool/docs/README.md)_
 
 ## Roadmap
 
