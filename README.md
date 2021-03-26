@@ -13,7 +13,7 @@
   <p align="center">
     DESCRIPTION
     <br />
-    <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/docs/README.md"><strong>Explore the docs »</strong></a>
+    <a href="/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Report Bug</a>
