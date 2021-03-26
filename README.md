@@ -13,7 +13,7 @@
   <p align="center">
     DESCRIPTION
     <br />
-    <a href="/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Report Bug</a>
@@ -87,7 +87,7 @@ You need to install python, that can be done [here](https://www.python.org)
 
 Run the `main.py` file using `py -3 main.py` and select an option
 
-_For more examples, please refer to the [Documentation](https://github.com/logicguy1/The-all-in-one-discord-tool/docs/README.md)_
+_For more examples, please refer to the [Documentation](https://github.com/logicguy1/The-all-in-one-discord-tool/wiki)_
 
 ## Roadmap
 
