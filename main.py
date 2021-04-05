@@ -1,3 +1,7 @@
+#dont try to edit them these are out of your knowledge
+#code for educational purpose only, just run the bat file for windows and sh file for linux 
+#macos sucks don't use on it
+
 from colored import fg, bg, attr
 import time
 import os
