@@ -28,9 +28,9 @@ class Client:
             "5" : {"function" : historyClear.clear, "name" : "HistoryClear"},
             "6" : {"function" : bumper.bumper, "name" : "AutoBump"},
             "7" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
-            "7" : {"function" : memer.start, "name" : "Dank memer gridner"},
-            "8" : {"function" : credits.show_credits, "name" : "Credits"},
-            "9" : {"function" : exit, "name" : "Exit"}
+            "8" : {"function" : memer.start, "name" : "Dank memer gridner"},
+            "9" : {"function" : credits.show_credits, "name" : "Credits"},
+            "10" : {"function" : exit, "name" : "Exit"}
         }
         self.modules = modules
 
