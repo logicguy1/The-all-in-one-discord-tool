@@ -20,7 +20,7 @@
     ·
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/issues">Request Feature</a>
       ·
-    <a href="https://discord.gg/TMshrBeyHE">Join the discord</a>
+    <a href="https://discord.gg/RZuRFB2QYa">Join the discord</a>
   </p>
 </p>
 
