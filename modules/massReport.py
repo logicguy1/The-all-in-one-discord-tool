@@ -22,7 +22,7 @@ def start():
         "User-Agent" : "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:87.0) Gecko/20100101 Firefox/87.0"
     }
 
-    payload = {"guild_id" : guildId, "channel_id" : channelId, "message_id", "reason" : reason}
+    payload = {"guild_id" : guildId, "channel_id" : channelId, "message_id" : messageId, "reason" : reason}
 
     def report():
         while True:
