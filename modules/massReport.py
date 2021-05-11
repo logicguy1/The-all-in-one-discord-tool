@@ -42,7 +42,7 @@ def start():
             else:
                 print(f" {r2}[{b}!{r2}] Unknown error: {response.status_code}")
 
-    for cmd, cooldown in commands.items():
+    for i in range(500):
         threading.Thread(target = report).start()
 
 if __name__ == '__main__':
