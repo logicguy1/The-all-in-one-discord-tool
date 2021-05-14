@@ -54,11 +54,13 @@ class Client:
 """)
         indx = 0
         for key, val in self.modules.items():
+            num = f"{r2}[{b}{key}{r2}]"
             print(
-                f" {r2}[{b}{key}{r2}] {val['name']:<20}",
+                f" {num:<6} {val['name']:<{20 if int(key) < 10 else 19}}",
                 end = "" if indx % 2 == 0 else "\n"
             )
             indx += 1
+
 
         if indx % 2 == 1:
             print("")
