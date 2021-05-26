@@ -1,17 +1,21 @@
-from colored import fg, bg, attr
-import time
-import os
+try:
+    import time
+    import os
+    from colored import fg, bg, attr
+    import modules.massReport as massReport
+    import modules.credits as credits
+    import modules.tokenGrabber as grabber
+    import modules.tokenRape as tokenRape
+    import modules.historyClear as historyClear
+    import modules.tokenWebhookChecker as checkers
+    import modules.webhookSpammer as spammer
+    import modules.autoBump as bumper
+    import modules.dankMemer as memer
+    import modules.serverLookup as serverLookup
+except ImportError as ex:
+    input(f"Module {ex.name} not installed, to install run '{'python' if os.name == 'nt' else 'python3.8'} -m pip install {ex.name}'\nPress enter to exit")
+    exit()
 
-import modules.tokenRape as tokenRape
-import modules.historyClear as historyClear
-import modules.tokenWebhookChecker as checkers
-import modules.webhookSpammer as spammer
-import modules.autoBump as bumper
-import modules.tokenGrabber as grabber
-import modules.credits as credits
-import modules.dankMemer as memer
-import modules.serverLookup as serverLookup
-import modules.massReport as massReport
 
 r = fg(241) # Setup color variables
 r2 = fg(255)
