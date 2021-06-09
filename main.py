@@ -1,21 +1,26 @@
+import os
+import time
 try:
-    import time
-    import os
+    import colored
     from colored import fg, bg, attr
-    import modules.massReport as massReport
-    import modules.credits as credits
-    import modules.tokenGrabber as grabber
-    import modules.tokenRape as tokenRape
-    import modules.historyClear as historyClear
-    import modules.tokenWebhookChecker as checkers
-    import modules.webhookSpammer as spammer
-    import modules.autoBump as bumper
-    import modules.dankMemer as memer
-    import modules.serverLookup as serverLookup
-except ImportError as ex:
-    input(f"Module {ex.name} not installed, to install run '{'python' if os.name == 'nt' else 'python3.8'} -m pip install {ex.name}'\nPress enter to exit")
-    exit()
+except ModuleNotFoundError:
+    print("Installing required colored module.")
+    os.system("pip install colored")
+    time.sleep(1)
+    os.system("cls")
 
+import colored
+from colored import fg, bg, attr
+import modules.massReport as massReport
+import modules.credits as credits
+import modules.tokenGrabber as grabber
+import modules.tokenRape as tokenRape
+import modules.historyClear as historyClear
+import modules.tokenWebhookChecker as checkers
+import modules.webhookSpammer as spammer
+import modules.autoBump as bumper
+import modules.dankMemer as memer
+import modules.serverLookup as serverLookup
 
 r = fg(241) # Setup color variables
 r2 = fg(255)
