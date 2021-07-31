@@ -54,6 +54,20 @@
 
 The tool has all the features you need to run and raid a discord server  
 
+- Auto Bump
+- Dank Memer Gridner
+- History Clear
+- Mass Report
+- Server Lookup
+- Token Grabber
+- Token Rape
+- Webhook Checker
+- Webhook Spammer
+
+Upcomming Features
+- Webhook Deleter
+- Vanaty Sniper
+
 ### Built With
 
 * [Requests](https://github.com/psf/requests)
