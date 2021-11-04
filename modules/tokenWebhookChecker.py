@@ -85,7 +85,7 @@ Languge: {user['locale']}
 def webhook():
     webhook = input(f"\n {r2}[{b}?{r2}] Webhook Url: ")
 
-    print(f" {r2}[{b}+{r2}] Webhook information")
+    print(f" {r2}[{b}+{r2}] Webhook information")  
     time.sleep(.5)
 
     responce = requests.get(
@@ -100,3 +100,19 @@ def webhook():
 
     print(f"\n {r2}[{b}!{r2}] Valid Token")
     print(f" {r2}[{b}+{r2}] Name: {responce['name']} Id: {responce['id']}")
+
+
+def webhook_deleter():
+    webhook = input(f"\n {r2}[{b}?{r2}] Webhook Url: ")
+
+    print(f" {r2}[{b}+{r2}] Deleting webhook, please wait.")
+    requests.delete(webhook)
+
+    response = requests.get(webhook)
+
+    if response.status_code != 200:
+        print(f" {r2}[{b}+{r2}] Webhook removed")
+    else:
+        print(f" {r2}[{b}!{r2}] Unable to remove webhook, error: 200")
+
+

