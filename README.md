@@ -63,10 +63,10 @@ The tool has all the features you need to run and raid a discord server
 - Token Rape
 - Webhook Checker
 - Webhook Spammer
+- Webhook Deleter
 
 ### Upcomming Features
 
-- Webhook Deleter
 - Vanaty Sniper
 
 ### Built With
