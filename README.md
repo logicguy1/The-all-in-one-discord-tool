@@ -55,7 +55,7 @@
 The tool has all the features you need to run and raid a discord server  
 
 - Auto Bump
-- Dank Memer Gridner
+- Dank Memer Grinder
 - History Clear
 - Mass Report
 - Server Lookup
@@ -67,7 +67,7 @@ The tool has all the features you need to run and raid a discord server
 
 ### Upcomming Features
 
-- Vanaty Sniper
+- Vanity Sniper
 
 ### Built With
 
