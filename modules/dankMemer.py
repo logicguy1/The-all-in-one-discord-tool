@@ -39,7 +39,7 @@ def start():
 
             time.sleep(cooldown + random.randint(2, 10))
 
-    commands = {
+    commands = { # Command : Cooldown in seconds, remember a comma after each line
         "pls beg" : 45,
         "pls hunt" : 40,
         "pls fish" : 40,
