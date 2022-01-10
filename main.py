@@ -13,6 +13,24 @@ print(LICENCE)
 time.sleep(1)
 os.system('cls' if os.name == 'nt' else 'clear')
 
+print("Chcking internal version with servers")
+try:
+    import requests
+except ImportError as ex:
+    input(f"Module {ex.name} not installed, to install run '{'python' if os.name == 'nt' else 'python3.8'} -m pip install {ex.name}'\nPress enter to exit")
+    exit()
+
+response = requests.get("https://raw.githubusercontent.com/logicguy1/The-all-in-one-discord-tool/main/version.txt")
+
+with open("version.txt", "r") as file:
+    curVersion = file.read().strip()
+
+if response.status_code != 200:
+    exit()
+if curVersion != response.text.strip():
+    print("WARNING: There is a newer version avaliable at \n https://github.com/logicguy1/The-all-in-one-discord-tool\nIts highly recommended to update as soon as posible")
+    time.sleep(5)
+
 try:
     import time
     import os
