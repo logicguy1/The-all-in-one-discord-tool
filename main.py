@@ -28,7 +28,7 @@ with open("version.txt", "r") as file:
 if response.status_code != 200:
     exit()
 if curVersion != response.text.strip():
-    print("WARNING: There is a newer version avaliable at \n https://github.com/logicguy1/The-all-in-one-discord-tool\nIts highly recommended to update as soon as posible")
+    print("WARNING: There is a newer version avaliable at \n https://github.com/logicguy1/The-all-in-one-discord-tool\nIts highly recommended to update as soon as posible.\nThis message will dissapear in 5 seconds.")
     time.sleep(5)
 
 try:
