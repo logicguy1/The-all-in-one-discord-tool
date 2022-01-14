@@ -68,6 +68,7 @@ The tool has all the features you need to run and raid a discord server
 ### Upcomming Features
 
 - Vanity Sniper
+- Token manager
 
 ### Built With
 
