@@ -85,7 +85,7 @@ class Client:
  ██{b}║  {r2}██{b}║{r2}██{b}║ ╚{r2}████{b}║╚{r2}██████{b}╔╝{r2}██{b}║ ╚{r2}████{b}║{r2}██{b}║{r2}██{b}╔╝ {r2}██{b}╗{r2}
  {b}╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
 {r2} * DISCLAIMR: This script is made for           *
- * educational purporses and the developers     *
+ * educational purposes and the developers     *
  * assume no liabilaty and are not responsible  *
  * for any misuse or damages caused by the      *
  * script                                       *
