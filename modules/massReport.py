@@ -1,11 +1,11 @@
-LICNECE = """
+LICENSE = """
 Copyright © 2021 Drillenissen#4268
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-from colored import fg, attr
+from colored import fg
 import requests
 import threading
 import time
@@ -18,9 +18,9 @@ w = fg(15)
 
 def start():
     token = input(f"\n {r2}[{b}?{r2}] Token: ")
-    guildId = input(f" {r2}[{b}?{r2}] Server Id: ")
-    channelId = input(f" {r2}[{b}?{r2}] Channel Id: ")
-    messageId = input(f" {r2}[{b}?{r2}] Message Id: ")
+    guildId = input(f" {r2}[{b}?{r2}] Server ID: ")
+    channelId = input(f" {r2}[{b}?{r2}] Channel ID: ")
+    messageId = input(f" {r2}[{b}?{r2}] Message ID: ")
     reason = input(f" {r2}[{b}?{r2}] Reason: ")
 
     headers = {
@@ -41,13 +41,13 @@ def start():
             if response.status_code == 201:
                 print(f" {r2}[{b}+{r2}] Report sent successfully")
             elif response.status_code == 429:
-                print(f" {r2}[{b}!{r2}] Ratelimited, waiting 5 seconds")
+                print(f" {r2}[{b}!{r2}] Rate Limited, waiting 5 seconds")
                 time.sleep(5)
             elif response.status_code == 401:
-                print(f" {r2}[{b}!{r2}] Invalid token")
+                print(f" {r2}[{b}!{r2}] Invalid Token")
                 return
             else:
-                print(f" {r2}[{b}!{r2}] Unknown error: {response.status_code}")
+                print(f" {r2}[{b}!{r2}] Unknown Error: {response.status_code}")
 
     for i in range(500):
         threading.Thread(target = report).start()

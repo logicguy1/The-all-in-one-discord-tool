@@ -1,8 +1,8 @@
 <p align="center">
-<img src=https://img.shields.io/github/stars/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=blue />
-<img src=https://img.shields.io/github/forks/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=blue />
-<img src=https://img.shields.io/github/issues/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=informational />
-<img src=https://img.shields.io/github/issues-pr/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=informational />
+<img src=https://img.shields.io/github/stars/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=blue/>
+<img src=https://img.shields.io/github/forks/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=blue/>
+<img src=https://img.shields.io/github/issues/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=informational/>
+<img src=https://img.shields.io/github/issues-pr/logicguy1/The-all-in-one-discord-tool?style=for-the-badge&logo=appveyor&color=informational/>
 </p>
 <br />
 <p align="center">
@@ -68,7 +68,7 @@ The tool has all the features you need to run and raid a discord server
 ### Upcomming Features
 
 - Vanity Sniper
-- Token manager
+- Token Manager
 
 ### Built With
 
@@ -80,7 +80,7 @@ The tool has all the features you need to run and raid a discord server
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-You need to install python, that can be done [here](https://www.python.org)
+You need to install [Python]("https://python.org")
 
 ### Installation
 
@@ -91,12 +91,10 @@ You need to install python, that can be done [here](https://www.python.org)
 2. Install Python packages
    ```sh
    # Windows:
-   py -3 -m pip install requests
-   py -3 -m pip install colored
+   py -3 -m pip install -r requirements.txt
    
-   # Unix
-   python3.8 -m pip install requests
-   python3.8 -m pip install colored
+   # Linux:
+   python3.8 -m pip install -r requirements.txt
    ```
 
 ## Usage

