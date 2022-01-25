@@ -1,4 +1,4 @@
-LICNECE = """
+LICENSE = """
 Copyright © 2021 Drillenissen#4268
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -9,7 +9,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 # This is the source code for my dank memer gridner, if you want to create a custom action you can head down to line 42, the bot will run the command then wait the set amount of seconds and type it agein, do whatever you want you can add stuff such as "pls steal..." or "pls buy..."
 # 
 
-from colored import fg, attr
+from colored import fg
 import requests
 import threading
 import time
@@ -22,10 +22,10 @@ w = fg(15)
 
 def start():
     token = input(f"\n {r2}[{b}?{r2}] Token: ")
-    channel = input(f" {r2}[{b}?{r2}] Channel Id: ")
+    channel = input(f" {r2}[{b}?{r2}] Channel ID: ")
 
     def execute_command(command = "", cooldown = 0):
-        print(f"{r2}[{b}!{r2} Loaded: '{command}' With cooldown of {cooldown} Seconds")
+        print(f"{r2}[{b}!{r2} Loaded: '{command}' with cooldown of {cooldown} Seconds")
         while True:
             requests.post(
                 f"https://discord.com/api/channels/{channel}/messages",
