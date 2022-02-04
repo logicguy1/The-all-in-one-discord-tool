@@ -13,7 +13,8 @@ b = fg(31)
 w = fg(15)
 
 def show_credits():
-    print(f"\n {r2}[{b}+{r2}] Author: Drillenissen#4268")
+    print(f"\n {r2}[{b}+{r2}] Author: Drillenissen#0666")
+    print(f" {r2}[{b}+{r2}] Matrix Server: https://matrix.to/#/#anonix.verification:matrix.org")
     print(f" {r2}[{b}+{r2}] Discord Server: https://www.anonix.xyz/discord")
     print(f" {r2}[{b}+{r2}] GitHub: https://github.com/logicguy1")
 
