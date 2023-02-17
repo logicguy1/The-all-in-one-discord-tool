@@ -11,7 +11,7 @@
   <h3 align="center">The all in one discord tool</h3>
 
   <p align="center">
-    All the discod tool you could need in one  
+    All the discord tool you could need in one  
     <br />
     <a href="https://github.com/logicguy1/The-all-in-one-discord-tool/wiki"><strong>Explore the docs »</strong></a>
     <br />
